@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HR Systems & Automation Consultant | Accra, Ghana</title>
+  <meta name="description" content="Expert HR Systems & Automation Consulting based in Accra, Ghana. Specializing in automated payroll, biometric attendance integration, Power BI executive dashboards, and custom VBA tools.">
+  <meta name="keywords" content="HR Automation Ghana, Payroll Automation Accra, Power BI HR Dashboard, Biometric Attendance Integration, ICAG Consultant, AWS Certified HR Tech">
+  
+  <!-- Open Graph / Social Media Meta -->
+  <meta property="og:title" content="HR Systems & Automation Consultant | Accra, Ghana">
+  <meta property="og:description" content="Streamline payroll, attendance, and HR reporting with custom automation systems. ICAG & AWS Certified Specialist based in Accra.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- External Libraries: GSAP, ScrollTrigger, Lenis -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.3/dist/lenis.min.js" defer></script>
+
+  <!-- App JavaScript Modules -->
+  <script src="js/config.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/slideshow.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- ==================== HEADER / NAVIGATION ==================== -->
+  <header class="header-nav glass-nav">
+    <div class="container nav-wrapper">
+      <a href="#" class="logo">
+        <span class="logo-badge">HR</span>
+        <span>Automation<span class="text-gold">.gh</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#services-section">Services</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#slideshow-section">Gallery</a></li>
+          <li><a href="#portfolio-section">Portfolio</a></li>
+          <li><a href="#case-studies-section">Case Studies</a></li>
+          <li><a href="#testimonials-section">Testimonials</a></li>
+          <li><a href="#blog-section">Blog</a></li>
+          <li><a href="#contact-section" class="btn btn-primary" style="padding: 0.5rem 1.25rem;">Book Consultation</a></li>
+        </ul>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+          <span id="theme-icon">🌙</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Mobile Menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="section hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="section-tag">HR Systems & Automation Specialist</span>
+        <h1 class="text-gradient">Automating HR Operations & Payroll for Growing Ghanaian Enterprises</h1>
+        <p class="hero-subtitle" id="bio-headline">
+          Eliminate manual calculations, streamline biometric attendance, and gain executive visibility with custom Power BI dashboards and automated payroll pipelines.
+        </p>
+
+        <div class="badge-pills">
+          <span class="badge-pill">🇬🇭 Based in Accra</span>
+          <span class="badge-pill">🎓 ICAG Member</span>
+          <span class="badge-pill">☁️ AWS Certified</span>
+          <span class="badge-pill">⚡ GRA Compliant Payroll</span>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#contact-section" class="btn btn-primary">Book a Consultation ➔</a>
+          <a href="#portfolio-section" class="btn btn-secondary">Explore Systems</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="glass-panel hero-card">
+          <div class="profile-img-container">
+            <img id="profile-photo" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Consultant Profile Photo">
+          </div>
+          <h3>Consulting Overview</h3>
+          <p id="bio-summary" style="font-size: 0.9rem; margin-top: 0.5rem;">
+            Empowering organizations with seamless payroll, attendance tracking, and executive analytics.
+          </p>
+
+          <!-- Embedded YouTube Intro Video -->
+          <div class="video-container">
+            <iframe id="intro-video-iframe" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Intro Video" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PHOTO SLIDESHOW ==================== -->
+  <section class="section" id="slideshow-section" style="padding-top: 0;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Occasions & Projects</span>
+        <h2>Masterclasses, Systems Deployments & Field Events</h2>
+      </div>
+      <div id="slideshow-container"></div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES SECTION ==================== -->
+  <section class="section" id="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Core Offerings</span>
+        <h2>Comprehensive HR & Automation Solutions</h2>
+        <p>Built to fit Ghanaian statutory requirements and international standards.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="glass-panel service-card">
+          <div class="service-icon">⚡</div>
+          <h3>Ghana Statutory Payroll Automation</h3>
+          <p>Automate monthly PAYE tax calculations according to GRA tax brackets, SSNIT tier-1/tier-2 schedules, payslip delivery, and bank disbursement files.</p>
+        </div>
+
+        <div class="glass-panel service-card">
+          <div class="service-icon">🕒</div>
+          <h3>Biometric Attendance Integration</h3>
+          <p>Connect physical biometric time clocks (ZKTeco/Suprema) directly to leave management systems and overtime payout workflows.</p>
+        </div>
+
+        <div class="glass-panel service-card">
+          <div class="service-icon">📊</div>
+          <h3>Power BI HR Executive Analytics</h3>
+          <p>Interactive executive dashboards delivering real-time insights on turnover rates, headcount distribution, overtime expenses, and KPI benchmarks.</p>
+        </div>
+
+        <div class="glass-panel service-card">
+          <div class="service-icon">🛠️</div>
+          <h3>Custom Excel / VBA Automation</h3>
+          <p>Transform messy legacy spreadsheets into automated, formula-protected macro workbooks that process data with a single click.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT SECTION ==================== -->
+  <section class="section" id="about-section">
+    <div class="container">
+      <div class="glass-panel" style="padding: clamp(2rem, 5vw, 4rem);">
+        <div style="max-width: 800px; margin: 0 auto;">
+          <span class="section-tag">Credentials & Methodology</span>
+          <h2 style="margin-bottom: 1.5rem;">Bridge the Gap Between Accounting Compliance & Modern Software Engineering</h2>
+          <p style="margin-bottom: 1.25rem;">
+            With dual background certifications from the <strong>Institute of Chartered Accountants Ghana (ICAG)</strong> and <strong>Amazon Web Services (AWS)</strong>, I specialize in engineering robust HR software pipelines that are both technically seamless and strictly compliant with local labor and tax laws.
+          </p>
+          <p>
+            Whether your enterprise requires a custom payroll reconciliation engine, cloud database integration, or staff training masterclasses in Accra, my engagements focus on tangible ROI, time savings, and operational accuracy.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PORTFOLIO SECTION ==================== -->
+  <section class="section" id="portfolio-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Featured Systems</span>
+        <h2>Portfolio of Deployed Automation Tools</h2>
+        <p>Explore recent software projects, custom macros, and analytics suites.</p>
+      </div>
+
+      <div class="portfolio-grid" id="portfolio-grid">
+        <!-- Rendered dynamically via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CASE STUDIES SECTION ==================== -->
+  <section class="section" id="case-studies-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Deep Dives</span>
+        <h2>Client Impact Case Studies</h2>
+      </div>
+
+      <div class="case-studies-grid" id="case-studies-grid">
+        <!-- Rendered dynamically via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS SECTION ==================== -->
+  <section class="section" id="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Client Reviews</span>
+        <h2>Trusted by Leaders & HR Directors</h2>
+      </div>
+
+      <div class="testimonials-grid" id="testimonials-grid">
+        <!-- Rendered dynamically via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BLOG SECTION ==================== -->
+  <section class="section" id="blog-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Insights & Articles</span>
+        <h2>Latest Industry Writings</h2>
+        <p>Articles on HR tech trends, Ghana GRA compliance, and Power BI best practices.</p>
+      </div>
+
+      <div class="blog-grid" id="blog-grid">
+        <!-- Rendered dynamically via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section class="section" id="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <span class="section-tag">Let's Connect</span>
+          <h2>Ready to Automate Your HR Operations?</h2>
+          <p style="margin-bottom: 2rem;">
+            Schedule a free initial assessment for your company's payroll, attendance, or reporting workflows in Accra or remotely.
+          </p>
+
+          <div class="glass-panel" style="padding: 1.5rem; margin-bottom: 1.5rem;">
+            <h4 style="margin-bottom: 0.5rem;">📍 Location</h4>
+            <p>Accra, Ghana (Available for on-site & remote projects across Africa)</p>
+          </div>
+
+          <div class="glass-panel" style="padding: 1.5rem;">
+            <h4 style="margin-bottom: 0.5rem;">⚡ Response Time</h4>
+            <p>Inquiries are typically answered within 24 business hours.</p>
+          </div>
+        </div>
+
+        <div class="glass-panel contact-card">
+          <h3 style="margin-bottom: 1.5rem;">Book a Consultation</h3>
+
+          <div id="toast-success" class="toast-alert toast-success"></div>
+          <div id="toast-error" class="toast-alert toast-error"></div>
+
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="contact-name">Full Name *</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="e.g. Kwame Mensah" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email Address *</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="e.g. kwame@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-phone">Phone / WhatsApp Number</label>
+              <input type="tel" id="contact-phone" class="form-input" placeholder="e.g. +233 24 123 4567">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-service">Primary Service Interest</label>
+              <select id="contact-service" class="form-select">
+                <option value="Payroll Automation">Ghana Payroll & Tax Automation</option>
+                <option value="Biometric Attendance">Biometric Attendance Systems</option>
+                <option value="Power BI Dashboards">Power BI HR Executive Dashboards</option>
+                <option value="Excel / VBA Tooling">Custom Excel & VBA Tools</option>
+                <option value="General Consulting">General HR Systems Consultation</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Project Details / Message *</label>
+              <textarea id="contact-message" class="form-textarea" placeholder="Tell us about your team size, current systems, and key challenges..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Submit Inquiry ➔
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BLOG MODAL POPUP ==================== -->
+  <div class="modal-overlay" id="blog-modal-overlay">
+    <div class="glass-panel modal-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Modal">✕</button>
+      <div class="blog-date" id="modal-post-date"></div>
+      <h2 id="modal-post-title" style="margin-bottom: 1.5rem;"></h2>
+      <div id="modal-post-content" style="line-height: 1.8; margin-bottom: 2rem;"></div>
+      <a id="modal-post-linkedin" href="#" target="_blank" rel="noopener" class="btn btn-secondary">
+        View & Discuss on LinkedIn ↗
+      </a>
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 HR Systems & Automation Consulting. All rights reserved. Based in Accra, Ghana.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
