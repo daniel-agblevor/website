@@ -4,7 +4,7 @@
  */
 const CONFIG = {
   // Set your Render backend URL here for production GitHub Pages deployment
-  PRODUCTION_API_URL: 'https://hr-systems-consulting-api.onrender.com',
+  PRODUCTION_API_URL: 'https://website-h02j.onrender.com',
 
   get API_BASE_URL() {
     const hostname = window.location.hostname;
